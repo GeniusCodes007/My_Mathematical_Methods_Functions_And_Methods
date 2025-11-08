@@ -27,7 +27,7 @@ class BasicArithmetics:
         return num1
 
     @staticmethod
-    def divide(num1, num2): return num1/num2
+    def divide(num1:float, num2:float): return num1/num2
 
     @staticmethod
     def divide_multiple(num1:float, *nums:float):
