@@ -10,6 +10,6 @@ class Scientific_Arithmetics:
 
     def permutate(self, n:int, r:int): return self.factorial(n) / self.factorial(n - r)
 
-    def combine(self, n, r): return self.permutate(n, r) / self.factorial(r)
+    def combine(self, n:int, r:int): return self.permutate(n, r) / self.factorial(r)
 
 b = Scientific_Arithmetics()

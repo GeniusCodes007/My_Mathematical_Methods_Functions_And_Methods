@@ -1,12 +1,9 @@
 import math
-
+from Arithmetics.basic_arithmetics import BasicArithmetics
 
 class SimpleCircleGeometry:
     def __init__(self, radius):
         self.radius = radius
-    @staticmethod
-    def mod_rem(base_num, divisor):
-        return int(base_num % divisor)
     
     def circumference(self):
         result = (44/7) * self.radius
@@ -17,7 +14,7 @@ class SimpleCircleGeometry:
         return result
 
     def area_of_sector_angle_in_degree(self, angle):
-        real_angle = self.mod_rem(angle, 360)
+        real_angle = BasicArithmetics().mod_rem(angle, 360)
         result = (real_angle / 360) * self.area()
         return result
     
@@ -36,14 +33,4 @@ class SimpleCircleGeometry:
         return length
 
 
-
-
-
-
-
 circle1 = SimpleCircleGeometry(10)
-print(circle1.area())
-print(circle1.area_of_sector_angle_in_degree(180))
-print(circle1.circumference())
-print(circle1.length_of_arc_angle_in_radian(1.4))
-print(circle1.mod_rem(14,9))

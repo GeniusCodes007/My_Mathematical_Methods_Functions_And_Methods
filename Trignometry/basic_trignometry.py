@@ -1,88 +1,73 @@
 from Arithmetics.basic_arithmetics import BasicArithmetics
 import math
 
-class TrigMethods:
+rem = BasicArithmetics()
+whole = 360
+
+def _360_check(num: float): return rem.mod_rem(num, 360)
+
+class TrigRatios:
 
     @staticmethod
-    def sine(angle:float):
-        if BasicArithmetics().mod_rem(angle, 360) == 30:
-            return 1 / 2
-        elif BasicArithmetics().mod_rem(angle, 360) == 0:
-            return 0.0
-        elif BasicArithmetics().mod_rem(angle, 360) == 90:
-            return 1.0
-        elif BasicArithmetics().mod_rem(angle, 360) == 180:
-            return 0.0
-        elif BasicArithmetics().mod_rem(angle, 360) == 270:
-            return -1.0
+    def sine(angle:float)-> float:
+        if _360_check(angle) == 30: return 0.5
+        elif _360_check(angle) == 90: return 1.0
+        elif _360_check(angle) == 150: return 0.5
+        elif _360_check(angle) == 180: return 0.0
+        elif _360_check(angle) == 210: return -0.5
+        elif _360_check(angle) == 270: return -1.0
+        elif _360_check(angle) == 330: return -0.5
         else:
             sin = math.sin(math.pi * (angle / 180))
             return float(sin)
 
     @staticmethod
-    def cos(angle:float):
-        if BasicArithmetics().mod_rem(angle, 360) == 0:
-            return 1.0
-        elif BasicArithmetics().mod_rem(angle, 360) == 60:
-            return 0.5
-        elif BasicArithmetics().mod_rem(angle, 360) == 90:
-            return 0.0
-        elif BasicArithmetics().mod_rem(angle, 360) == 180:
-            return -1.0
-        elif BasicArithmetics().mod_rem(angle, 360) == 270:
-            return 0.0
+    def cos(angle:float)-> float:
+        if _360_check(angle) == 60: return 0.5
+        elif _360_check(angle) == 90: return 0.0
+        elif _360_check(angle) == 120: return -0.5
+        elif _360_check(angle) == 240: return -0.5
+        elif _360_check(angle) == 270: return -1.0
+        elif _360_check(angle) == 300: return 0.5
         else:
             cos = math.cos(math.pi * (angle / 180))
-            return cos
+            return float(cos)
 
-    def tan(self, angle:float):
+    def tan(self, angle:float)-> float | None:
         try:
             sin = self.sine(angle)
             cosine = self.cos(angle)
             tan = sin / cosine
             return tan
         except ZeroDivisionError:
-            return "For " + str(angle) + " The Result Is Undefined"
+            return None
 
     @staticmethod
-    def arc_sine(num:float):
+    def arc_sine(num:float)-> float | None:
         try:
             result = math.asin(num)
             result_in_degrees = math.degrees(result)
             return result_in_degrees
         except ValueError:
-            return f"Number: {num},Out of Range"
+            return None
 
     @staticmethod
-    def arc_cosine(num:float):
+    def arc_cosine(num:float)-> float | None:
         try:
             result = math.acos(num)
             result_in_degrees = math.degrees(result)
             return result_in_degrees
         except ValueError:
-            return f"Number: {num},Out of Range"
+            return None
 
     @staticmethod
-    def arc_tangent(num:float):
+    def arc_tangent(num:float)-> float | None:
         try:
             result = math.atan(num)
             result_in_degrees = math.degrees(result)
             return result_in_degrees
         except ValueError:
-            return f"Number: {num},Out of Range"
+            return None
 
-c = TrigMethods()
+c = TrigRatios()
 
-class TrigCompoundAngles:
-
-    @staticmethod
-    def sineAddition(A, B):
-        return f"Sin({A}) Cos({B}) + Cos({A}) Sin({B})"
-
-    @staticmethod
-    def cosineAddition(A, B):
-        return f"Cos({A}) Cos({B}) + Sin({A}) Sin({B})"
-
-    @staticmethod
-    def tangentAddition(A, B):
-        return f"( Tan({A}) + Tan({B}) ) / ( 1 - Tan({A}) Tan({B}) )"

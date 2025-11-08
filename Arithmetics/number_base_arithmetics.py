@@ -1,4 +1,4 @@
-from typing import List
+from typing import Tuple
 from Number_Bases.other_base_conversion import Other_Base_Conversion
 
 """
@@ -10,7 +10,7 @@ All these functions return 'None' for NoneType parameters
 class Number_Base_Arithmetics:
 
     @staticmethod
-    def add(answer_base: int, *base_lists:List[str: int]):
+    def add(answer_base: int, *base_lists:Tuple[str, int]):
         answer = 0
         o = Other_Base_Conversion()
         for kl in base_lists:
@@ -21,7 +21,7 @@ class Number_Base_Arithmetics:
         return o.inter_base_conversion(str(answer), 10, answer_base)
 
     @staticmethod
-    def subtract(base_lists1: List[str: int], base_lists2: List[str: int]):
+    def subtract(base_lists1: Tuple[str: int], base_lists2: Tuple[str: int]):
         o = Other_Base_Conversion()
         num_1 = o.other_base_to_base10(base_lists1[0], base_lists1[1])
         num_2 = o.other_base_to_base10(base_lists2[0], base_lists2[1])
@@ -29,7 +29,7 @@ class Number_Base_Arithmetics:
         return answer
 
     @staticmethod
-    def multiply(answer_base: int, *base_lists: List[str: int]):
+    def multiply(answer_base: int, *base_lists: Tuple[str, int]):
         answer = 1
         o = Other_Base_Conversion()
         for kl in base_lists:
@@ -40,7 +40,7 @@ class Number_Base_Arithmetics:
         return o.inter_base_conversion(str(answer), 10, answer_base)
 
     @staticmethod
-    def divide(base_lists1: List[str: int], base_lists2: List[str: int]):
+    def divide(base_lists1: Tuple[str: int], base_lists2: Tuple[str: int]):
         o = Other_Base_Conversion()
         num_1 = o.other_base_to_base10(base_lists1[0], base_lists1[1])
         num_2 = o.other_base_to_base10(base_lists2[0], base_lists2[1])
@@ -48,3 +48,5 @@ class Number_Base_Arithmetics:
         return answer
 
 
+nba = Number_Base_Arithmetics().add(1, ("10", 2), ("110", 2))
+print(nba)
