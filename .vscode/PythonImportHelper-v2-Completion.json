@@ -1,0 +1,657 @@
+[
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "site",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "site",
+        "description": "site",
+        "detail": "site",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Other_Base_Conversion",
+        "importPath": "Number_Bases.other_base_conversion",
+        "description": "Number_Bases.other_base_conversion",
+        "isExtraImport": true,
+        "detail": "Number_Bases.other_base_conversion",
+        "documentation": {}
+    },
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "BasicArithmetics",
+        "importPath": "Arithmetics.basic_arithmetics",
+        "description": "Arithmetics.basic_arithmetics",
+        "isExtraImport": true,
+        "detail": "Arithmetics.basic_arithmetics",
+        "documentation": {}
+    },
+    {
+        "label": "BasicArithmetics",
+        "importPath": "Arithmetics.basic_arithmetics",
+        "description": "Arithmetics.basic_arithmetics",
+        "isExtraImport": true,
+        "detail": "Arithmetics.basic_arithmetics",
+        "documentation": {}
+    },
+    {
+        "label": "BasicFrequentFunctions",
+        "importPath": "basic_frequent_functions",
+        "description": "basic_frequent_functions",
+        "isExtraImport": true,
+        "detail": "basic_frequent_functions",
+        "documentation": {}
+    },
+    {
+        "label": "BasicFrequentFunctions",
+        "importPath": "basic_frequent_functions",
+        "description": "basic_frequent_functions",
+        "isExtraImport": true,
+        "detail": "basic_frequent_functions",
+        "documentation": {}
+    },
+    {
+        "label": "Base_Ten_Conversions",
+        "importPath": "Number_Bases.base_ten_conversions",
+        "description": "Number_Bases.base_ten_conversions",
+        "isExtraImport": true,
+        "detail": "Number_Bases.base_ten_conversions",
+        "documentation": {}
+    },
+    {
+        "label": "Base_Ten_Conversions",
+        "importPath": "Number_Bases.base_ten_conversions",
+        "description": "Number_Bases.base_ten_conversions",
+        "isExtraImport": true,
+        "detail": "Number_Bases.base_ten_conversions",
+        "documentation": {}
+    },
+    {
+        "label": "Hexadecimal_Conversions",
+        "importPath": "Number_Bases.hexadecimal_conversions",
+        "description": "Number_Bases.hexadecimal_conversions",
+        "isExtraImport": true,
+        "detail": "Number_Bases.hexadecimal_conversions",
+        "documentation": {}
+    },
+    {
+        "label": "Base_Ten_Conversions",
+        "importPath": "Number_Bases.hexadecimal_conversions",
+        "description": "Number_Bases.hexadecimal_conversions",
+        "isExtraImport": true,
+        "detail": "Number_Bases.hexadecimal_conversions",
+        "documentation": {}
+    },
+    {
+        "label": "bin_dir",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "bin_dir = os.path.dirname(abs_file)\nbase = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "base",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "base = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"PATH\"]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV\"]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV_PROMPT\"]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "prev_length",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "prev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.path[:]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "sys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.real_prefix",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "sys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.prefix",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "sys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "BasicArithmetics",
+        "kind": 6,
+        "importPath": "Arithmetics.basic_arithmetics",
+        "description": "Arithmetics.basic_arithmetics",
+        "peekOfCode": "class BasicArithmetics:\n    @staticmethod\n    def add(num1:float, num2:float): return num1 - num2\n    @staticmethod\n    def add_multiple(num: float, *nums: float):\n        for n in nums:\n            num = num + n\n        return num\n    @staticmethod\n    def subtract(num1:float, num2:float): return num1 - num2",
+        "detail": "Arithmetics.basic_arithmetics",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "Arithmetics.basic_arithmetics",
+        "description": "Arithmetics.basic_arithmetics",
+        "peekOfCode": "b = BasicArithmetics()",
+        "detail": "Arithmetics.basic_arithmetics",
+        "documentation": {}
+    },
+    {
+        "label": "Number_Base_Arithmetics",
+        "kind": 6,
+        "importPath": "Arithmetics.number_base_arithmetics",
+        "description": "Arithmetics.number_base_arithmetics",
+        "peekOfCode": "class Number_Base_Arithmetics:\n    @staticmethod\n    def add(answer_base: int, *base_lists:Tuple[str, int]):\n        answer = 0\n        o = Other_Base_Conversion()\n        for kl in base_lists:\n            try:\n                answer = answer + int(o.inter_base_conversion(kl[0], kl[1], 10))\n            except TypeError:\n                return None",
+        "detail": "Arithmetics.number_base_arithmetics",
+        "documentation": {}
+    },
+    {
+        "label": "nba",
+        "kind": 5,
+        "importPath": "Arithmetics.number_base_arithmetics",
+        "description": "Arithmetics.number_base_arithmetics",
+        "peekOfCode": "nba = Number_Base_Arithmetics().add(1, (\"10\", 2), (\"110\", 2))\nprint(nba)",
+        "detail": "Arithmetics.number_base_arithmetics",
+        "documentation": {}
+    },
+    {
+        "label": "Scientific_Arithmetics",
+        "kind": 6,
+        "importPath": "Arithmetics.scientific_arithmetics",
+        "description": "Arithmetics.scientific_arithmetics",
+        "peekOfCode": "class Scientific_Arithmetics:\n    @staticmethod\n    def factorial(n:int):\n        answer = 1\n        for n in range(n):\n            answer = answer* (n + 1)\n        return answer\n    def permutate(self, n:int, r:int): return self.factorial(n) / self.factorial(n - r)\n    def combine(self, n:int, r:int): return self.permutate(n, r) / self.factorial(r)\nb = Scientific_Arithmetics()",
+        "detail": "Arithmetics.scientific_arithmetics",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "Arithmetics.scientific_arithmetics",
+        "description": "Arithmetics.scientific_arithmetics",
+        "peekOfCode": "b = Scientific_Arithmetics()",
+        "detail": "Arithmetics.scientific_arithmetics",
+        "documentation": {}
+    },
+    {
+        "label": "SimpleCircleGeometry",
+        "kind": 6,
+        "importPath": "Circle_Geometry.simple_circle_geometry",
+        "description": "Circle_Geometry.simple_circle_geometry",
+        "peekOfCode": "class SimpleCircleGeometry:\n    def __init__(self, radius):\n        self.radius = radius\n    def circumference(self):\n        result = (44/7) * self.radius\n        return result\n    def area(self):\n        result = (22 / 7) * (self.radius ** 2)\n        return result\n    def area_of_sector_angle_in_degree(self, angle):",
+        "detail": "Circle_Geometry.simple_circle_geometry",
+        "documentation": {}
+    },
+    {
+        "label": "circle1",
+        "kind": 5,
+        "importPath": "Circle_Geometry.simple_circle_geometry",
+        "description": "Circle_Geometry.simple_circle_geometry",
+        "peekOfCode": "circle1 = SimpleCircleGeometry(10)",
+        "detail": "Circle_Geometry.simple_circle_geometry",
+        "documentation": {}
+    },
+    {
+        "label": "GraphGeometry",
+        "kind": 6,
+        "importPath": "Geometry.graph_geometry",
+        "description": "Geometry.graph_geometry",
+        "peekOfCode": "class GraphGeometry:\n    basic_linear_graph = \"y = mx + c\"\n    def __init__(self, x_1, y_1 ,x_2, y_2):\n        self.coordinate_1 = [x_1, y_1]\n        self.coordinate_2 = [x_2, y_2]\n        self.x1 = int(self.coordinate_1[0])\n        self.x2 = int(self.coordinate_2[0])\n        self.y1 = int(self.coordinate_1[1])\n        self.y2 = int(self.coordinate_2[1])\n        self.delta_x = self.x2 - self.x1",
+        "detail": "Geometry.graph_geometry",
+        "documentation": {}
+    },
+    {
+        "label": "line",
+        "kind": 5,
+        "importPath": "Geometry.graph_geometry",
+        "description": "Geometry.graph_geometry",
+        "peekOfCode": "line = GraphGeometry(1, -1, -2, -13)\nprint(line.basic_linear_graph)\nprint(line.midpoint_coordinate())\nprint(line.distance_between_two_points())\nprint(line.gradient)\nprint(line.slope)\nprint(line.delta_x)\nprint(line.delta_y)\nprint(line.angle_of_slope())\nprint(line.equation_of_straight_line())",
+        "detail": "Geometry.graph_geometry",
+        "documentation": {}
+    },
+    {
+        "label": "print_hi",
+        "kind": 2,
+        "importPath": "Geometry.main",
+        "description": "Geometry.main",
+        "peekOfCode": "def print_hi(name):\n    # Use a breakpoint in the code line below to debug your script.\n    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.\n# Press the green button in the gutter to run the script.\nif __name__ == '__main__':\n    print_hi('PyCharm')\n# See PyCharm help at https://www.jetbrains.com/help/pycharm/",
+        "detail": "Geometry.main",
+        "documentation": {}
+    },
+    {
+        "label": "mod_whole",
+        "kind": 2,
+        "importPath": "Geometry.simple_geometry",
+        "description": "Geometry.simple_geometry",
+        "peekOfCode": "def mod_whole(base_num, divisor):\n    return float(base_num) // float(divisor)\n#print(mod_whole(1, 2))\n#gives the remainder of the quotient of num1 and num2, where num2 divides num1.\ndef mod_rem(base_num, divisor):\n    return float(base_num) % float(divisor)\n#gives the remainder of the quotient of num1 and num2 as a fraction of num2, while num2 divides num1\ndef mod_frac_rem(base_num, divisor):\n    return str(int(mod_rem(base_num, divisor))) + \"/\" + str(divisor)\ndef sine2(base_num, angle):",
+        "detail": "Geometry.simple_geometry",
+        "documentation": {}
+    },
+    {
+        "label": "mod_rem",
+        "kind": 2,
+        "importPath": "Geometry.simple_geometry",
+        "description": "Geometry.simple_geometry",
+        "peekOfCode": "def mod_rem(base_num, divisor):\n    return float(base_num) % float(divisor)\n#gives the remainder of the quotient of num1 and num2 as a fraction of num2, while num2 divides num1\ndef mod_frac_rem(base_num, divisor):\n    return str(int(mod_rem(base_num, divisor))) + \"/\" + str(divisor)\ndef sine2(base_num, angle):\n    if mod_rem(angle, 360) == 30:\n        return base_num * 1/2\n    elif mod_rem(angle, 360) == 0:\n        return 0.0",
+        "detail": "Geometry.simple_geometry",
+        "documentation": {}
+    },
+    {
+        "label": "mod_frac_rem",
+        "kind": 2,
+        "importPath": "Geometry.simple_geometry",
+        "description": "Geometry.simple_geometry",
+        "peekOfCode": "def mod_frac_rem(base_num, divisor):\n    return str(int(mod_rem(base_num, divisor))) + \"/\" + str(divisor)\ndef sine2(base_num, angle):\n    if mod_rem(angle, 360) == 30:\n        return base_num * 1/2\n    elif mod_rem(angle, 360) == 0:\n        return 0.0\n    elif mod_rem(angle, 360) == 90:\n        return 1.0\n    elif mod_rem(angle, 360) == 180:",
+        "detail": "Geometry.simple_geometry",
+        "documentation": {}
+    },
+    {
+        "label": "sine2",
+        "kind": 2,
+        "importPath": "Geometry.simple_geometry",
+        "description": "Geometry.simple_geometry",
+        "peekOfCode": "def sine2(base_num, angle):\n    if mod_rem(angle, 360) == 30:\n        return base_num * 1/2\n    elif mod_rem(angle, 360) == 0:\n        return 0.0\n    elif mod_rem(angle, 360) == 90:\n        return 1.0\n    elif mod_rem(angle, 360) == 180:\n        return base_num * 0.0\n    elif mod_rem(angle, 360) == 270:",
+        "detail": "Geometry.simple_geometry",
+        "documentation": {}
+    },
+    {
+        "label": "cos2",
+        "kind": 2,
+        "importPath": "Geometry.simple_geometry",
+        "description": "Geometry.simple_geometry",
+        "peekOfCode": "def cos2(base_num, angle):\n    if mod_rem(angle, 360) == 0:\n        return 1.0 * base_num\n    elif mod_rem(angle, 360) == 90:\n        return 0.0 * base_num\n    elif mod_rem(angle, 360) == 180:\n        return -1.0 * base_num\n    elif mod_rem(angle, 360) == 270:\n        return 0.0 * base_num\n    else:",
+        "detail": "Geometry.simple_geometry",
+        "documentation": {}
+    },
+    {
+        "label": "tan2",
+        "kind": 2,
+        "importPath": "Geometry.simple_geometry",
+        "description": "Geometry.simple_geometry",
+        "peekOfCode": "def tan2(base_num, angle):\n    try:\n        s = sine2(base_num, angle)\n        c = cos2(base_num, angle)\n        tan = s/c\n        return tan * base_num\n    except ZeroDivisionError:\n        return \"For \" + str(angle) + \" The Result Is Undefined\" + \"\\nDivision By Zero Is Infinite\"\ndef square(base_num):\n    return float(base_num) ** float(2)",
+        "detail": "Geometry.simple_geometry",
+        "documentation": {}
+    },
+    {
+        "label": "square",
+        "kind": 2,
+        "importPath": "Geometry.simple_geometry",
+        "description": "Geometry.simple_geometry",
+        "peekOfCode": "def square(base_num):\n    return float(base_num) ** float(2)\ndef square_root(base_num):\n    return float(base_num) ** float(0.5)\ndef circumference(r):\n    result = (2 * 22 * r) / 7\n    return str(result)\nprint(circumference(7))\ndef area(r):\n    result = (22/7)*(r ** 2)",
+        "detail": "Geometry.simple_geometry",
+        "documentation": {}
+    },
+    {
+        "label": "square_root",
+        "kind": 2,
+        "importPath": "Geometry.simple_geometry",
+        "description": "Geometry.simple_geometry",
+        "peekOfCode": "def square_root(base_num):\n    return float(base_num) ** float(0.5)\ndef circumference(r):\n    result = (2 * 22 * r) / 7\n    return str(result)\nprint(circumference(7))\ndef area(r):\n    result = (22/7)*(r ** 2)\n    return result\nprint(area(7))",
+        "detail": "Geometry.simple_geometry",
+        "documentation": {}
+    },
+    {
+        "label": "circumference",
+        "kind": 2,
+        "importPath": "Geometry.simple_geometry",
+        "description": "Geometry.simple_geometry",
+        "peekOfCode": "def circumference(r):\n    result = (2 * 22 * r) / 7\n    return str(result)\nprint(circumference(7))\ndef area(r):\n    result = (22/7)*(r ** 2)\n    return result\nprint(area(7))\ndef finding_c(a, b):\n    result = square_root(float(square(a))+float(square(b)))",
+        "detail": "Geometry.simple_geometry",
+        "documentation": {}
+    },
+    {
+        "label": "area",
+        "kind": 2,
+        "importPath": "Geometry.simple_geometry",
+        "description": "Geometry.simple_geometry",
+        "peekOfCode": "def area(r):\n    result = (22/7)*(r ** 2)\n    return result\nprint(area(7))\ndef finding_c(a, b):\n    result = square_root(float(square(a))+float(square(b)))\n    return result\ndef finding_a(c, b):\n    result = square_root(float(square(c))-float(square(b)))\n    if c <= b:",
+        "detail": "Geometry.simple_geometry",
+        "documentation": {}
+    },
+    {
+        "label": "finding_c",
+        "kind": 2,
+        "importPath": "Geometry.simple_geometry",
+        "description": "Geometry.simple_geometry",
+        "peekOfCode": "def finding_c(a, b):\n    result = square_root(float(square(a))+float(square(b)))\n    return result\ndef finding_a(c, b):\n    result = square_root(float(square(c))-float(square(b)))\n    if c <= b:\n        return \"Not Possible !!!\"\n    else:\n        return result\ndef finding_b(c, a):",
+        "detail": "Geometry.simple_geometry",
+        "documentation": {}
+    },
+    {
+        "label": "finding_a",
+        "kind": 2,
+        "importPath": "Geometry.simple_geometry",
+        "description": "Geometry.simple_geometry",
+        "peekOfCode": "def finding_a(c, b):\n    result = square_root(float(square(c))-float(square(b)))\n    if c <= b:\n        return \"Not Possible !!!\"\n    else:\n        return result\ndef finding_b(c, a):\n    result1 = square_root(float(square(c))-float(square(a)))\n    if c <= a:\n        return \"Not Possible !!!\"",
+        "detail": "Geometry.simple_geometry",
+        "documentation": {}
+    },
+    {
+        "label": "finding_b",
+        "kind": 2,
+        "importPath": "Geometry.simple_geometry",
+        "description": "Geometry.simple_geometry",
+        "peekOfCode": "def finding_b(c, a):\n    result1 = square_root(float(square(c))-float(square(a)))\n    if c <= a:\n        return \"Not Possible !!!\"\n    else:\n        return result1\ndef pythatriple():\n    what = input(\"Find What: \")\n    if what == \"C\" or \"c\":\n        num1 = float(input(\"Give A Number: \"))",
+        "detail": "Geometry.simple_geometry",
+        "documentation": {}
+    },
+    {
+        "label": "pythatriple",
+        "kind": 2,
+        "importPath": "Geometry.simple_geometry",
+        "description": "Geometry.simple_geometry",
+        "peekOfCode": "def pythatriple():\n    what = input(\"Find What: \")\n    if what == \"C\" or \"c\":\n        num1 = float(input(\"Give A Number: \"))\n        num2 = float(input(\"Give Another Number: \"))\n        result1 = finding_c(num1, num2)\n        return result1\n    elif what == \"A\" or \"a\":\n        num1 = float(input(\"Give A Number: \"))\n        num2 = float(input(\"Give Another Number: \"))",
+        "detail": "Geometry.simple_geometry",
+        "documentation": {}
+    },
+    {
+        "label": "BasicFrequentFunctions",
+        "kind": 6,
+        "importPath": "Graph_Solutions.basic_frequent_functions",
+        "description": "Graph_Solutions.basic_frequent_functions",
+        "peekOfCode": "class BasicFrequentFunctions:\n    def add(self, num1, num2):\n        sum_up = num1 + num2\n        return sum_up\n    def difference(self, num1, num2):\n        dif = num1 - num2\n        return dif\n    def multiply(self, num1, num2):\n        prod = num1 * num2\n        return prod",
+        "detail": "Graph_Solutions.basic_frequent_functions",
+        "documentation": {}
+    },
+    {
+        "label": "BasicGraph",
+        "kind": 6,
+        "importPath": "Graph_Solutions.basic_graph",
+        "description": "Graph_Solutions.basic_graph",
+        "peekOfCode": "class BasicGraph:\n    basic_linear_graph = \"y = mx + c\"\n    def __init__(self, x_1, y_1, x_2, y_2):\n        self.coordinate_1 = [x_1, y_1]\n        self.coordinate_2 = [x_2, y_2]\n        self.x1 = int(self.coordinate_1[0])\n        self.x2 = int(self.coordinate_2[0])\n        self.y1 = int(self.coordinate_1[1])\n        self.y2 = int(self.coordinate_2[1])\n        self.delta_x = self.x2 - self.x1",
+        "detail": "Graph_Solutions.basic_graph",
+        "documentation": {}
+    },
+    {
+        "label": "Trignometry",
+        "kind": 6,
+        "importPath": "Graph_Solutions.basic_graph",
+        "description": "Graph_Solutions.basic_graph",
+        "peekOfCode": "class Trignometry(BasicFrequentFunctions, BasicGraph):\n    pass",
+        "detail": "Graph_Solutions.basic_graph",
+        "documentation": {}
+    },
+    {
+        "label": "string_check",
+        "kind": 2,
+        "importPath": "Graph_Solutions.basic_graph",
+        "description": "Graph_Solutions.basic_graph",
+        "peekOfCode": "def string_check():\n    c = 0\n    d = 1\n    letter = input(\"WORD: \")\n    words = len(letter)\n    print(words)\n    character = letter[c:d]\n    resulting = character\n    if character == \".\" or character == \",\":\n        resulting = \"__\"",
+        "detail": "Graph_Solutions.basic_graph",
+        "documentation": {}
+    },
+    {
+        "label": "line",
+        "kind": 5,
+        "importPath": "Graph_Solutions.basic_graph",
+        "description": "Graph_Solutions.basic_graph",
+        "peekOfCode": "line = BasicGraph(1, -1, -2, -13)\nprint(line.basic_linear_graph)\nprint(line.midpoint_coordinate())\nprint(line.distance_between_two_points())\nprint(line.gradient)\nprint(line.slope)\nprint(line.delta_x)\nprint(line.delta_y)\nprint(line.angle_of_slope())\nprint(line.equation_of_straight_line())",
+        "detail": "Graph_Solutions.basic_graph",
+        "documentation": {}
+    },
+    {
+        "label": "BasicTrignometry",
+        "kind": 6,
+        "importPath": "Graph_Solutions.basic_trignometry",
+        "description": "Graph_Solutions.basic_trignometry",
+        "peekOfCode": "class BasicTrignometry(BasicFrequentFunctions):    \n    def sine(self, base_num, angle):\n        if self.mod_rem(angle, 360) == 30:\n            return base_num * 1 / 2\n        elif self.mod_rem(angle, 360) == 0:\n            return 0.0\n        elif self.mod_rem(angle, 360) == 90:\n            return 1.0\n        elif self.mod_rem(angle, 360) == 180:\n            return base_num * 0.0",
+        "detail": "Graph_Solutions.basic_trignometry",
+        "documentation": {}
+    },
+    {
+        "label": "Base_Ten_Conversions",
+        "kind": 6,
+        "importPath": "Number_Bases.base_ten_conversions",
+        "description": "Number_Bases.base_ten_conversions",
+        "peekOfCode": "class Base_Ten_Conversions:\n    @staticmethod\n    def base10_to_binary(number:str) -> str | None:\n        try:\n            div = int(number[0:number.index('.')])\n            answer = \"\"\n            while div != 0:\n                rem = div % 2\n                div = div // 2\n                answer = str(rem) + answer",
+        "detail": "Number_Bases.base_ten_conversions",
+        "documentation": {}
+    },
+    {
+        "label": "count",
+        "kind": 2,
+        "importPath": "Number_Bases.base_ten_conversions",
+        "description": "Number_Bases.base_ten_conversions",
+        "peekOfCode": "def count(word:str, character:str)->int:\n    take_note =0\n    for letter in word:\n        if letter == character:\n            take_note = take_note + 1\n    return take_note\nhexa_extras = [\"A\", \"B\", \"C\", \"D\", \"E\", \"F\"]\n#This Function Converts Base 10 Decimals To Decimals Of The Specified Base\ndef from_decimal_conversions(base_num:int, decimal_num:str=\"0\") -> str | None:\n    try:",
+        "detail": "Number_Bases.base_ten_conversions",
+        "documentation": {}
+    },
+    {
+        "label": "from_decimal_conversions",
+        "kind": 2,
+        "importPath": "Number_Bases.base_ten_conversions",
+        "description": "Number_Bases.base_ten_conversions",
+        "peekOfCode": "def from_decimal_conversions(base_num:int, decimal_num:str=\"0\") -> str | None:\n    try:\n        if decimal_num == \"\":\n            return None\n        if decimal_num == \"0\":\n            return \"0\"\n        #Converts The Decimal Number To A Floating Point Number, For Evaluation\n        working_num= float(f\"0.{decimal_num}\")\n        answer = \"0.\"\n        multiplied = working_num",
+        "detail": "Number_Bases.base_ten_conversions",
+        "documentation": {}
+    },
+    {
+        "label": "to_decimal_conversion",
+        "kind": 2,
+        "importPath": "Number_Bases.base_ten_conversions",
+        "description": "Number_Bases.base_ten_conversions",
+        "peekOfCode": "def to_decimal_conversion(base_num:int, decimal_num:str)-> int|None:\n    try:\n        if decimal_num == \"\":\n            return None\n        if decimal_num == \"0\":\n            return 0\n        answer = 0\n        for digit in range(len(decimal_num)):\n            if int(decimal_num[digit]) >= base_num:\n                return None",
+        "detail": "Number_Bases.base_ten_conversions",
+        "documentation": {}
+    },
+    {
+        "label": "hexa_extras",
+        "kind": 5,
+        "importPath": "Number_Bases.base_ten_conversions",
+        "description": "Number_Bases.base_ten_conversions",
+        "peekOfCode": "hexa_extras = [\"A\", \"B\", \"C\", \"D\", \"E\", \"F\"]\n#This Function Converts Base 10 Decimals To Decimals Of The Specified Base\ndef from_decimal_conversions(base_num:int, decimal_num:str=\"0\") -> str | None:\n    try:\n        if decimal_num == \"\":\n            return None\n        if decimal_num == \"0\":\n            return \"0\"\n        #Converts The Decimal Number To A Floating Point Number, For Evaluation\n        working_num= float(f\"0.{decimal_num}\")",
+        "detail": "Number_Bases.base_ten_conversions",
+        "documentation": {}
+    },
+    {
+        "label": "ten",
+        "kind": 5,
+        "importPath": "Number_Bases.base_ten_conversions",
+        "description": "Number_Bases.base_ten_conversions",
+        "peekOfCode": "ten = Base_Ten_Conversions().base10_to_other_base(\"16.1\",16)",
+        "detail": "Number_Bases.base_ten_conversions",
+        "documentation": {}
+    },
+    {
+        "label": "Base_Two_Conversion",
+        "kind": 6,
+        "importPath": "Number_Bases.base_two_conversions",
+        "description": "Number_Bases.base_two_conversions",
+        "peekOfCode": "class Base_Two_Conversion:\n    @staticmethod\n    def binary_to_base10(number:str) -> int | None:\n        try:\n            num = int(number)\n            number = str(abs(num))\n            answer = 0\n            c = len(number) -1\n            for digit in number:\n                if int(digit) > 1:",
+        "detail": "Number_Bases.base_two_conversions",
+        "documentation": {}
+    },
+    {
+        "label": "two",
+        "kind": 5,
+        "importPath": "Number_Bases.base_two_conversions",
+        "description": "Number_Bases.base_two_conversions",
+        "peekOfCode": "two = Base_Two_Conversion()",
+        "detail": "Number_Bases.base_two_conversions",
+        "documentation": {}
+    },
+    {
+        "label": "Hexadecimal_Conversions",
+        "kind": 6,
+        "importPath": "Number_Bases.hexadecimal_conversions",
+        "description": "Number_Bases.hexadecimal_conversions",
+        "peekOfCode": "class Hexadecimal_Conversions:\n    @staticmethod\n    def hexa_to_base10(number:str)-> int | None:\n        num = 0\n        count = len(number) - 1\n        for digit in number:\n            if digit.upper() in hexa_extras :\n                no = hexa_extras.index(digit.upper()) + 10\n                numb = no * (16 ** count)\n                num = num + numb",
+        "detail": "Number_Bases.hexadecimal_conversions",
+        "documentation": {}
+    },
+    {
+        "label": "hexa_extras",
+        "kind": 5,
+        "importPath": "Number_Bases.hexadecimal_conversions",
+        "description": "Number_Bases.hexadecimal_conversions",
+        "peekOfCode": "hexa_extras = [\"A\", \"B\", \"C\", \"D\", \"E\", \"F\"]\ndecimals = [\"1\", \"2\", \"3\", \"4\", \"5\", \"6\", \"7\", \"8\", \"9\", \"0\"]\nclass Hexadecimal_Conversions:\n    @staticmethod\n    def hexa_to_base10(number:str)-> int | None:\n        num = 0\n        count = len(number) - 1\n        for digit in number:\n            if digit.upper() in hexa_extras :\n                no = hexa_extras.index(digit.upper()) + 10",
+        "detail": "Number_Bases.hexadecimal_conversions",
+        "documentation": {}
+    },
+    {
+        "label": "decimals",
+        "kind": 5,
+        "importPath": "Number_Bases.hexadecimal_conversions",
+        "description": "Number_Bases.hexadecimal_conversions",
+        "peekOfCode": "decimals = [\"1\", \"2\", \"3\", \"4\", \"5\", \"6\", \"7\", \"8\", \"9\", \"0\"]\nclass Hexadecimal_Conversions:\n    @staticmethod\n    def hexa_to_base10(number:str)-> int | None:\n        num = 0\n        count = len(number) - 1\n        for digit in number:\n            if digit.upper() in hexa_extras :\n                no = hexa_extras.index(digit.upper()) + 10\n                numb = no * (16 ** count)",
+        "detail": "Number_Bases.hexadecimal_conversions",
+        "documentation": {}
+    },
+    {
+        "label": "h",
+        "kind": 5,
+        "importPath": "Number_Bases.hexadecimal_conversions",
+        "description": "Number_Bases.hexadecimal_conversions",
+        "peekOfCode": "h = Hexadecimal_Conversions().hexa_to_other_base(\"2ea\", 16)",
+        "detail": "Number_Bases.hexadecimal_conversions",
+        "documentation": {}
+    },
+    {
+        "label": "Other_Base_Conversion",
+        "kind": 6,
+        "importPath": "Number_Bases.other_base_conversion",
+        "description": "Number_Bases.other_base_conversion",
+        "peekOfCode": "class Other_Base_Conversion:\n    @staticmethod\n    def other_base_to_base10(number:str, base_num:int) -> int | None:\n        if base_num == 16:\n            result = Hexadecimal_Conversions().hexa_to_base10(number)\n            return result\n        elif 1 <= base_num <= 10:\n            try:\n                num = int(number)\n                number = str(abs(num))",
+        "detail": "Number_Bases.other_base_conversion",
+        "documentation": {}
+    },
+    {
+        "label": "o",
+        "kind": 5,
+        "importPath": "Number_Bases.other_base_conversion",
+        "description": "Number_Bases.other_base_conversion",
+        "peekOfCode": "o = Other_Base_Conversion()",
+        "detail": "Number_Bases.other_base_conversion",
+        "documentation": {}
+    },
+    {
+        "label": "TrigRatios",
+        "kind": 6,
+        "importPath": "Trignometry.basic_trignometry",
+        "description": "Trignometry.basic_trignometry",
+        "peekOfCode": "class TrigRatios:\n    @staticmethod\n    def sine(angle:float)-> float:\n        if _360_check(angle) == 30: return 0.5\n        elif _360_check(angle) == 90: return 1.0\n        elif _360_check(angle) == 150: return 0.5\n        elif _360_check(angle) == 180: return 0.0\n        elif _360_check(angle) == 210: return -0.5\n        elif _360_check(angle) == 270: return -1.0\n        elif _360_check(angle) == 330: return -0.5",
+        "detail": "Trignometry.basic_trignometry",
+        "documentation": {}
+    },
+    {
+        "label": "rem",
+        "kind": 5,
+        "importPath": "Trignometry.basic_trignometry",
+        "description": "Trignometry.basic_trignometry",
+        "peekOfCode": "rem = BasicArithmetics()\nwhole = 360\ndef _360_check(num: float): return rem.mod_rem(num, 360)\nclass TrigRatios:\n    @staticmethod\n    def sine(angle:float)-> float:\n        if _360_check(angle) == 30: return 0.5\n        elif _360_check(angle) == 90: return 1.0\n        elif _360_check(angle) == 150: return 0.5\n        elif _360_check(angle) == 180: return 0.0",
+        "detail": "Trignometry.basic_trignometry",
+        "documentation": {}
+    },
+    {
+        "label": "whole",
+        "kind": 5,
+        "importPath": "Trignometry.basic_trignometry",
+        "description": "Trignometry.basic_trignometry",
+        "peekOfCode": "whole = 360\ndef _360_check(num: float): return rem.mod_rem(num, 360)\nclass TrigRatios:\n    @staticmethod\n    def sine(angle:float)-> float:\n        if _360_check(angle) == 30: return 0.5\n        elif _360_check(angle) == 90: return 1.0\n        elif _360_check(angle) == 150: return 0.5\n        elif _360_check(angle) == 180: return 0.0\n        elif _360_check(angle) == 210: return -0.5",
+        "detail": "Trignometry.basic_trignometry",
+        "documentation": {}
+    },
+    {
+        "label": "c",
+        "kind": 5,
+        "importPath": "Trignometry.basic_trignometry",
+        "description": "Trignometry.basic_trignometry",
+        "peekOfCode": "c = TrigRatios()",
+        "detail": "Trignometry.basic_trignometry",
+        "documentation": {}
+    },
+    {
+        "label": "TrigCompoundAngles",
+        "kind": 6,
+        "importPath": "Trignometry.trig_compound_angles",
+        "description": "Trignometry.trig_compound_angles",
+        "peekOfCode": "class TrigCompoundAngles:\n    @staticmethod\n    def sineAddition(A, B):\n        return f\"Sin({A}) Cos({B}) + Cos({A}) Sin({B})\"\n    @staticmethod\n    def cosineAddition(A, B):\n        return f\"Cos({A}) Cos({B}) + Sin({A}) Sin({B})\"\n    @staticmethod\n    def tangentAddition(A, B):\n        return f\"( Tan({A}) + Tan({B}) ) / ( 1 - Tan({A}) Tan({B}) )\"",
+        "detail": "Trignometry.trig_compound_angles",
+        "documentation": {}
+    }
+]
